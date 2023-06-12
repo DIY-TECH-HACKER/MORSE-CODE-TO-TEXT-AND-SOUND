@@ -2,7 +2,9 @@ from playsound import playsound
 import sys
 import time
 import threading
+import os 
 
+directory = os.getcwd()
 
 def typewrite(string):
     for k in string:
@@ -37,9 +39,9 @@ while True:
  def speaking():
    for c in message:
     if c == ".":
-       playsound("/morse code/dot.wav")
+       playsound(directory+"\\dot.wav")
     elif c == "-":
-       playsound("/morse code/dash.wav")
+       playsound(directory+"\\dash.wav")
     elif c == "/" or c == " ":
        time.sleep(0.2) 
  
