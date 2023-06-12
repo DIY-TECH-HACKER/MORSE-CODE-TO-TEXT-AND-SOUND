@@ -37,9 +37,9 @@ while True:
  def speaking():
    for c in message:
     if c == ".":
-       playsound("D:\SOFTWARES\Python\MY CODES\python\morse code\dot.wav")
+       playsound("/morse code/dot.wav")
     elif c == "-":
-       playsound("D:\SOFTWARES\Python\MY CODES\python\morse code\dash.wav")
+       playsound("/morse code/dash.wav")
     elif c == "/" or c == " ":
        time.sleep(0.2) 
  
